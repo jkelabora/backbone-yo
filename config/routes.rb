@@ -6,6 +6,10 @@ BackboneYo::Application.routes.draw do
 
   root to: "main#index"
 
+  # this is the line to get around backbone using Backbone.history.start(pushState: true)
+  match '*path', to: "main#index"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

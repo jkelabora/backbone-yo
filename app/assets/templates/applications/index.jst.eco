@@ -1,9 +1,10 @@
 <h1>apps for all ya'll</h1>
 
-
 <form id='new_application'>
   <input type='text' name='name' id='new_application_name'>
   <input type='submit' value='Add'>
 </form>
 
 <ul id='applications'></ul>
+
+<button id="random">Random</button>

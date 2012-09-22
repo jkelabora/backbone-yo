@@ -1,1 +1,5 @@
 <%= @app.get('name') %>
+
+<% if @app.get('selected'): %>     <%  # this .get() call needs a trailing ':' for some reason!! %>
+    <span class='choice'>Choice</span>
+<% end %>
