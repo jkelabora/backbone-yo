@@ -1,7 +1,9 @@
 <h1>apps for all ya'll</h1>
 
-<ul>
-  <% for app in @applications.models: %>
-    <li><%= app.get('name') %></li>
-  <% end %>
-</ul>
+
+<form id='new_application'>
+  <input type='text' name='name' id='new_application_name'>
+  <input type='submit' value='Add'>
+</form>
+
+<ul id='applications'></ul>
